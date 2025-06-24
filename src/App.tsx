@@ -27,6 +27,18 @@ const daysTasks: DaysTasks = [
       ],
       element: "Day1Task1",
     },
+    {
+      name: "Theme Toggle App (Light/Dark)",
+      goal: "Build a theme switcher app using Context API",
+      features: [
+        "Toggle button or switch for theme",
+        "Show task list with checkboxes",
+        "Global theme state via Context",
+        "Theme stored in localStorage",
+        "Reusable components reflect theme changes",
+      ],
+      element: "Day1Task2",
+    },
   ],
 ];
 
@@ -100,8 +112,8 @@ function Day({
           return (
             <li key={index}>
               <Link
-                to={`/day-${index + 1}/task-${index + 1}`}
-                className="w-full max-w-xl border px-10 py-7 flex flex-col gap-5 bg-[#343a40] rounded-lg border-white/30 cursor-pointer"
+                to={`/day-${day}/task-${index + 1}`}
+                className="w-xl border px-10 py-7 flex flex-col gap-5 bg-[#343a40] rounded-lg border-white/30 cursor-pointer"
               >
                 <h1 className="w-full text-center font-semibold">
                   Task {index + 1}
