@@ -1,6 +1,6 @@
-# 🚀 75 Days of React with TypeScript — Practical Tasks & Interview Q&A
+# 🚀 30 Days of React with TypeScript — Practical Tasks & Interview Q&A
 
-Hi! 👋 I’m doing a **75 Days React with TypeScript Challenge** to master React + TS development and prepare for real frontend interviews.
+Hi! 👋 I’m doing a **30 Days React with TypeScript Challenge** to master React + TS development and prepare for real frontend interviews.
 
 ## 📌 What is this repo?
 
@@ -22,14 +22,14 @@ Hi! 👋 I’m doing a **75 Days React with TypeScript Challenge** to master Rea
 
 - 🔥 Build solid React + TypeScript coding habits.
 - 🎓 Prepare confident answers for React + TS interview rounds.
-- 🚀 Push commits Monday to Friday and grow consistently for 75 days.
+- 🚀 Push commits Monday to Friday and grow consistently for 30 days.
 
 ---
 
 ## 📂 **Folder Structure**
 
 ```
-react-ts-75days-challenge/
+react-ts-30days-challenge/
 ├── src/
 │   ├── components
 │   │   ├── ...
@@ -73,4 +73,4 @@ I commit my progress **Monday to Friday** and share updates on [LinkedIn](https:
 
 Feel free to fork this repo, practice along, or suggest new task ideas!
 
-**#ReactJS #TypeScript #75DaysOfCode #100DaysOfCode #Frontend #WebDevelopment #CodingChallenge**
+**#ReactJS #TypeScript #30DaysOfCode #100DaysOfCode #Frontend #WebDevelopment #CodingChallenge**

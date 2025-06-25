@@ -39,6 +39,17 @@ const daysTasks: DaysTasks = [
       ],
       element: "Day1Task2",
     },
+    {
+      name: "Sortable, Paginated Data Table",
+      goal: "Build a table with data from JSONPlaceholder",
+      features: [
+        "Fetch & display data",
+        "Pagination (Next/Prev & numbers)",
+        "Search filter",
+        "Loading + error handlings",
+      ],
+      element: "Day1Task3",
+    },
   ],
 ];
 
