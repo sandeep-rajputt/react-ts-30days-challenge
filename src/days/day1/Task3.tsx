@@ -307,11 +307,9 @@ function TablePagination({
       }
       pageArr.push(pages);
     }
-    console.log(pageArr);
     setPage(() => [...pageArr]);
   }, [currentPage, itemPerPage, filteredData]);
 
-  console.log(page);
   return (
     <>
       {page.length > 0 && (

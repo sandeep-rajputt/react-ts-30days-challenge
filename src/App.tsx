@@ -51,6 +51,19 @@ const daysTasks: DaysTasks = [
       element: "Day1Task3",
     },
   ],
+  [
+    {
+      name: "Counter with Step Control",
+      goal: "Build a simple counter with buttons to increase/decrease the count, plus a dropdown to select step size.",
+      features: [
+        "Display the current count",
+        "+ and - buttons to increment/decrement",
+        "Dropdown or input to choose the step (e.g., 1, 5, 10)",
+        "Reset button to set count back to zero",
+      ],
+      element: "Day2Task1",
+    },
+  ],
 ];
 
 function App() {
