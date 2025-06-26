@@ -63,6 +63,17 @@ const daysTasks: DaysTasks = [
       ],
       element: "Day2Task1",
     },
+    {
+      name: "Accordion FAQ Component",
+      goal: "Build an accordion where multiple FAQ items can expand/collapse.",
+      features: [
+        "Render a list of FAQ items (question + answer)",
+        "Only one item open at a time (optional: allow multiple)",
+        "Clicking a question toggles its answer",
+        "Use an array of FAQ data to render dynamically",
+      ],
+      element: "Day2Task2",
+    },
   ],
 ];
 
