@@ -26,8 +26,13 @@ function Task1() {
 
   // delete Item from list
   function handleDelete(index: number) {
+    console.log();
     setList((prev) => {
-      return prev.filter((_item, indx) => indx !== index);
+      const newList = prev.filter((_item, indx) => indx !== index);
+      if (newList.length === 0) {
+        localStorage.removeItem("list");
+      }
+      return [...newList];
     });
   }
 
