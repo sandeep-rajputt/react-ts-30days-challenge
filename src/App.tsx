@@ -2,7 +2,7 @@ import type { JSX } from "react";
 import { Routes, Route } from "react-router";
 import * as DaysMap from "@src/days/days.ts";
 import { Link } from "react-router";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const daysRecord = DaysMap as Record<string, React.ComponentType<any>>;
 
@@ -78,6 +78,33 @@ const daysTasks: DaysTasks = [
 ];
 
 function App() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setWidth(window.innerWidth);
+    });
+
+    return () => {
+      window.removeEventListener("resize", () => {});
+    };
+  }, []);
+
+  if (width < 800) {
+    return (
+      <div className="bg-[#212529] text-[#f8f9fa]">
+        <div className="flex-col gap-10 min-h-screen py-10 w-full flex items-center justify-center">
+          <h1 className="text-2xl font-semibold">
+            Please open this app in large screen
+          </h1>
+          <p className="text-sm opacity-70">
+            This app is designed to work on larger screens.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen h-full bg-[#212529] text-[#f8f9fa]">
       <Routes>
