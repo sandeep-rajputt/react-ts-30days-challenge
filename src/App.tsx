@@ -74,6 +74,18 @@ const daysTasks: DaysTasks = [
       ],
       element: "Day2Task2",
     },
+    {
+      name: "Form Validation Library (Mini)",
+      goal: "Build a reusable form input + validation system.",
+      features: [
+        "Input fields: name, email, password",
+        "Show real-time validation errors",
+        "Validations: required, email format, min password length",
+        "Submit button disabled unless all valid",
+        "Show success message after submission",
+      ],
+      element: "Day2Task3",
+    },
   ],
 ];
 
