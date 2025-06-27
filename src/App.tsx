@@ -88,6 +88,19 @@ const daysTasks: DaysTasks = [
       element: "Day2Task3",
     },
   ],
+  [
+    {
+      name: "Emoji Picker Input",
+      goal: "Build a text input where users can click to insert emojis from a list.",
+      features: [
+        "Input field for typing text",
+        "Emoji button toggles a dropdown/popup with 10+ emojis",
+        "Clicking an emoji adds it to the current input value",
+        "Optional: Close dropdown when clicked outside",
+      ],
+      element: "Day3Task1",
+    },
+  ],
 ];
 
 function App() {
