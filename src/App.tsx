@@ -100,6 +100,17 @@ const daysTasks: DaysTasks = [
       ],
       element: "Day3Task1",
     },
+    {
+      name: "Tab Switcher Component",
+      goal: "Create a tab UI with 3 tabs — clicking each shows different content.",
+      features: [
+        "Tab headers (Tab 1, Tab 2, Tab 3)",
+        "Only one tab content visible at a time",
+        "Highlight active tab",
+        "Reusable Tab and Tabs component structure",
+      ],
+      element: "Day3Task2",
+    },
   ],
 ];
 
