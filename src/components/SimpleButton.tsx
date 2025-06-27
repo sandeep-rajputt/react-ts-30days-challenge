@@ -14,8 +14,10 @@ function SimpleButton({
   return (
     <button
       className={`flex font-semibold items-center justify-center gap-2 border-2 ${
-        disabled ? "cursor-default" : "cursor-pointer"
-      }  border-white/30 hover:bg-[#212529] bg-[#212529]/50 px-2 py-1 rounded ${className}`}
+        disabled
+          ? "cursor-default opacity-50"
+          : "cursor-pointer hover:bg-[#212529]"
+      }  border-white/30 bg-[#212529]/50 px-2 py-1 rounded ${className}`}
       disabled={disabled}
       onClick={() => handleClick()}
     >
