@@ -124,6 +124,21 @@ const daysTasks: DaysTasks = [
       element: "Day3Task3",
     },
   ],
+  [
+    {
+      name: "Random Color Box",
+      goal: "Generate and display colored boxes with random colors.",
+      features: [
+        "A button labeled “Generate Color”",
+        "On each click, generate a new box with a random background color",
+        "Show the hex color code inside the box",
+        "Stack boxes vertically (or in a grid if you want)",
+        "Optional: limit to 10 recent boxes only",
+        "Bonus: Add a “Clear All” button",
+      ],
+      element: "Day4Task1",
+    },
+  ],
 ];
 
 function App() {
