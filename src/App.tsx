@@ -138,6 +138,18 @@ const daysTasks: DaysTasks = [
       ],
       element: "Day4Task1",
     },
+    {
+      name: "Searchable List with Debounce",
+      goal: "Render a list of items and filter it based on a search input — with debounce.",
+      features: [
+        "Search input box",
+        "30–40 hardcoded list items",
+        "Show only items that match the search term",
+        "Debounce the filtering logic (e.g. 300ms delay after user stops typing)",
+        "Show “No results found” if nothing matches",
+      ],
+      element: "Day4Task2",
+    },
   ],
 ];
 
