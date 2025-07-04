@@ -83,7 +83,7 @@ export function ProtectedRoute({ children }: { children: React.ReactNode }) {
     if (!loading && !isLoggedIn) {
       navigate("/day-4/task-3/login");
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, loading]);
 
   if (loading) {
     return <div>Loading...</div>;

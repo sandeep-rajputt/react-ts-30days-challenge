@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { loginData } from "@src/hook/Day4Task3Login";
 import { useNavigate } from "react-router";
 
@@ -8,12 +8,17 @@ function Task3Login() {
   const { loading, login, isLoggedIn } = loginData();
   const navigate = useNavigate();
 
+  useEffect(() => {
+    if (!loading && isLoggedIn) {
+      navigate("/day-4/task-3/dashboard");
+    }
+  }, [isLoggedIn]);
+
   if (loading) {
     return <div>Loading...</div>;
   }
 
   if (isLoggedIn) {
-    navigate("/day-4/task-3/dashboard");
     return <div>Redirecting to Dashboard</div>;
   }
 
