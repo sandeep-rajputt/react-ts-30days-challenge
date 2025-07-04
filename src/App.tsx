@@ -150,6 +150,19 @@ const daysTasks: DaysTasks = [
       ],
       element: "Day4Task2",
     },
+    {
+      name: "Auth-Protected Route Demo",
+      goal: "Implement simple routing with protected pages based on fake authentication.",
+      features: [
+        "Pages: Home (/), Login (/login), Dashboard (/dashboard)",
+        "“Fake” login button sets a loggedIn flag in context",
+        "If not logged in → redirect to /login",
+        "Use React Router (react-router-dom)",
+        "Auth context using createContext",
+        "Simple logout functionality",
+      ],
+      element: "Day4Task3",
+    },
   ],
 ];
 
@@ -197,7 +210,7 @@ function App() {
                 return (
                   <>
                     <Route
-                      path={`/day-${index + 1}/task-${childIndex + 1}`}
+                      path={`/day-${index + 1}/task-${childIndex + 1}/*`}
                       element={<ChildComponent />}
                     />
                   </>
