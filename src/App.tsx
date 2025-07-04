@@ -164,6 +164,20 @@ const daysTasks: DaysTasks = [
       element: "Day4Task3",
     },
   ],
+  [
+    {
+      name: "Star Rating Component",
+      goal: "Build a simple interactive star rating component.",
+      features: [
+        "Display 5 stars (or any number)",
+        "Hover effect: highlight stars up to the hovered one",
+        "Click to set the rating",
+        "Show selected rating (e.g., “You rated: 4/5”)",
+        "Optional: pass max stars as a prop",
+      ],
+      element: "Day5Task1",
+    },
+  ],
 ];
 
 function App() {
