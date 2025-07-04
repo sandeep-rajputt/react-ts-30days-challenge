@@ -1,7 +1,6 @@
 import { Link } from "react-router";
 
 function Task3Home() {
-  const currentPath = window.location.pathname;
   return (
     <div className="flex justify-center py-10">
       <div className="w-2xl">
