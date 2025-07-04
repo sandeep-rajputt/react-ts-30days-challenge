@@ -11,3 +11,4 @@ export { default as Day4Task1 } from "@src/days/Day4/Task1";
 export { default as Day4Task2 } from "@src/days/Day4/Task2";
 export { default as Day4Task3 } from "@src/days/Day4/Task3";
 export { default as Day5Task1 } from "@src/days/Day5/Task1";
+export { default as Day5Task2 } from "@src/days/Day5/Task2";

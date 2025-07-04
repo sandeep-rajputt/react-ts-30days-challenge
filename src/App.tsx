@@ -177,6 +177,18 @@ const daysTasks: DaysTasks = [
       ],
       element: "Day5Task1",
     },
+    {
+      name: "Image Carousel",
+      goal: "Create a simple image slider with previous/next navigation.",
+      features: [
+        "Display one image at a time",
+        "Prev/Next buttons to navigate",
+        "Loop back at ends (circular)",
+        "Optional: auto-slide every 3s using setInterval",
+        "Optional: dots to show current index",
+      ],
+      element: "Day5Task2",
+    },
   ],
 ];
 
