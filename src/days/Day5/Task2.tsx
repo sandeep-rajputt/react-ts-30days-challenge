@@ -16,7 +16,7 @@ function Task2() {
   const [selected, setSelected] = useState<number>(1);
   const [autoPlay, setAutoPlay] = useState<boolean>(true);
 
-  function NextImage() {
+  function nextImage() {
     if (selected === carouselData.length) {
       setSelected((_prev) => 1);
     } else {
@@ -24,7 +24,7 @@ function Task2() {
     }
   }
 
-  function PreviousImage() {
+  function previousImage() {
     if (selected === 1) {
       setSelected(carouselData.length);
     } else {
@@ -35,7 +35,7 @@ function Task2() {
   useEffect(() => {
     if (autoPlay) {
       const interval = setInterval(() => {
-        NextImage();
+        nextImage();
       }, 3000);
 
       return () => {
@@ -44,8 +44,22 @@ function Task2() {
     }
   }, [autoPlay, selected]);
 
+  function handleKeyClick(key: string) {
+    if (key === " ") {
+      setAutoPlay((prev) => !prev);
+    } else if (key === "ArrowRight") {
+      nextImage();
+    } else if (key === "ArrowLeft") {
+      previousImage();
+    }
+  }
+
   return (
-    <div className="flex justify-center py-10">
+    <div
+      onKeyDown={(e) => handleKeyClick(e.key)}
+      tabIndex={0}
+      className="flex justify-center py-10"
+    >
       <div className="w-2xl">
         <div className="text-center">
           <h1 className="text-4xl font-semibold">Image Carousel</h1>
@@ -85,13 +99,13 @@ function Task2() {
           <div className="mt-5">
             <div className="w-full relative h-72 flex items-center justify-center overflow-hidden">
               <SimpleButton
-                handleClick={PreviousImage}
+                handleClick={previousImage}
                 className="absolute top-1/2 left-1 !bg-[#212529] py-2 transform -translate-y-1/2"
               >
                 <FaChevronLeft />
               </SimpleButton>
               <SimpleButton
-                handleClick={NextImage}
+                handleClick={nextImage}
                 className="absolute top-1/2 right-1 !bg-[#212529] py-2 transform -translate-y-1/2"
               >
                 <FaChevronRight />
@@ -112,6 +126,7 @@ function Task2() {
                 {carouselData.map((_item, index) => {
                   return (
                     <div
+                      key={index}
                       onClick={() => setSelected(index + 1)}
                       className={`w-3 h-3 cursor-pointer rounded-full bg-[#212529] ${
                         selected === index + 1 ? "bg-white" : "bg-[#212529]"
