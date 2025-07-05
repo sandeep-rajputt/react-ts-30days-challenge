@@ -189,6 +189,18 @@ const daysTasks: DaysTasks = [
       ],
       element: "Day5Task2",
     },
+    {
+      name: "Infinite Scroll Feed",
+      goal: "Simulate a social feed with posts loading on scroll.",
+      features: [
+        "Load initial list of 10 posts (can use dummy data or API)",
+        "On reaching bottom of page → load 10 more",
+        "Use Intersection Observer API (preferred) or scroll event",
+        "Optional: show loader during fetch",
+        "Optional: disable load when max reached",
+      ],
+      element: "Day5Task3",
+    },
   ],
 ];
 
