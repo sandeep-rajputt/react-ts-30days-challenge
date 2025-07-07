@@ -202,6 +202,20 @@ const daysTasks: DaysTasks = [
       element: "Day5Task3",
     },
   ],
+  [
+    {
+      name: "Color Picker",
+      goal: "Allow users to select and preview any color.",
+      features: [
+        "Input of type color",
+        "Show a box with the selected color",
+        "Display the hex code",
+        "Optional: Copy button to copy the hex color",
+        "Optional: Allow saving favorite colors",
+      ],
+      element: "Day6Task1",
+    },
+  ],
 ];
 
 function App() {
