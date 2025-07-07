@@ -215,6 +215,17 @@ const daysTasks: DaysTasks = [
       ],
       element: "Day6Task1",
     },
+    {
+      name: "Markdown Previewer",
+      goal: " Build a textarea that converts Markdown to preview instantly.",
+      features: [
+        "Textarea input for markdown",
+        "Show converted HTML side-by-side",
+        "Use a library like marked or remark",
+        "Optional: load default markdown text on mount",
+      ],
+      element: "Day6Task2",
+    },
   ],
 ];
 

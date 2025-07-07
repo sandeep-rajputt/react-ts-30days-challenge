@@ -1,2 +1,50 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
+.markdown-preview pre code {
+  display: block;
+  background-color: #212529;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 10px 0px;
+  font-size: 16px;
+  overflow-x: scroll;
+}
+
+.markdown-preview code {
+  background-color: #212529;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 14px;
+}
+
+.markdown-preview a {
+  color: blue;
+}
+
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3 {
+  font-weight: 700;
+}
+
+.markdown-preview h1 {
+  font-size: 30px;
+  padding: 10px 0px;
+}
+
+.markdown-preview h2 {
+  font-size: 25px;
+  padding: 8px 0px;
+}
+
+.markdown-preview h3 {
+  font-size: 20px;
+  padding: 5px 0px;
+}
+
+.markdown-preview ul {
+  list-style-type: circle;
+  margin-left: 10px;
+}
