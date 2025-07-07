@@ -226,6 +226,18 @@ const daysTasks: DaysTasks = [
       ],
       element: "Day6Task2",
     },
+    {
+      name: "Advanced Task — Drag-and-Drop Kanban Column (Single Lane)",
+      goal: "Create a column where tasks can be reordered using drag-and-drop.",
+      features: [
+        "One vertical column with draggable cards",
+        "Drag to reorder cards inside the same column",
+        "Use react-beautiful-dnd or native drag/drop API",
+        "Optional: Add new task feature",
+        "Optional: Save new order in localStorage",
+      ],
+      element: "Day6Task3",
+    },
   ],
 ];
 
