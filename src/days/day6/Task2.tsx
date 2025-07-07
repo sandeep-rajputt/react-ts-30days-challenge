@@ -1,8 +1,11 @@
 import { marked } from "marked";
 import { useState } from "react";
 
+const defaultValue =
+  '# Welcome to Markdown Previewer \n\nThis is a **live preview** of your markdown content.\n\n## Features\n\n- **Bold text** and *italic text*\n- [Links](https://example.com)\n- `inline code`\n- Code blocks:\n\n```\nfunction hello() {\nconsole.log("Hello, World!");\n}\n```\n\n### Lists\n- Item 1\n- Item 2\n- Item 3\n\n**Try editing the markdown on the left to see the preview update!**';
+
 function Task2() {
-  const [input, setInput] = useState<string>("");
+  const [input, setInput] = useState<string>(defaultValue);
   const htmlContent: string | Promise<string> = marked.parse(input);
 
   return (
